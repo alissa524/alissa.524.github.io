@@ -1,0 +1,5 @@
+title: My WildCat Studios Portfolio
+description: >-
+baseurl: "" # leave empty since this is your user page
+url: "https://alissa.524" # replace YOURUSERNAME with your GitHub username
+theme: jekyll-theme- midight # replace minima with your chosen theme from the list
