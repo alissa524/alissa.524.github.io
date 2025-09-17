@@ -3,8 +3,9 @@
 ## table of contents
 - [flutter notes](flutter-notes)
   - [What is Flutter?](what-is-flutter)
-- 
-- [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
+  - [key terms and defintions](#key-terms-and-defintions)
+  - [layout and design widget
+     - [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)  
 
 
 
@@ -44,6 +45,45 @@ a flamework made by google for building apps that work on web android, and ios-w
 - How do you center a widget?
 - How do you align something to the left or right?
 - What widget adds space around content?
+
+
+
+
+
+| Term | Definition and Description | Base Structure | Real Life Example | App Example |
+|------|----------------------------|----------------|-------------------|-------------|
+|main      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  |  |
+|materialapp      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
+|scaffold      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
+|column      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
+|row      | A widget that shows things side-by-side. | `Row(...)` |poster  |  |
+|container      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |things in rows  |  |
+|text      | A widget to display text on the screen. | `Text('Hello')` |  |  |
+|image.network      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
+|elevatedbutton      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
+|onpressed      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |saving things  |  |
+|statelesswidget      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget`|locatins being updated  |  |
+|navigator      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |press things  |  |
+|@override      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
+|build()      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
+|buildcontext      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
+|super.key      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
+|const      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
+|      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
+|      | Required in every widget class to describe what to show. | `build` |  |  |
+|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
+|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
+|      | A keyword that means the value won't change and is set once. | `const` |  |  |
+
+
+
+
+
+
+
+
+
+
   
 | Term | Definition | Base Structure / Syntax | Real Life Example | App Example |
 |------|------------|--------------------------|-------------------|-------------|
@@ -62,12 +102,12 @@ a flamework made by google for building apps that work on web android, and ios-w
 |scope      | Where a variable or function can be used. | (No set syntax — concept-based) |starbucks giftcard  |  |
 |class      | Blueprint for creating objects with specific structure and behavior. | `class Dog {}` |hoomecoming  |  |
 |object      | A specific version of a class. | `Dog myDog = Dog();` |each sstudent is an object in class  |  |
-|property      | A variable that belongs to a class/object. | `String name;` |  |  |
-|method      | A function that belongs to a class. | `void bark() {}` |  |  |
+|property      | A variable that belongs to a class/object. | `String name;` |school bus   |  |
+|method      | A function that belongs to a class. | `void bark() {}` |completing homework  |  |
 |constructor      | A special function used to set up a class when it’s created. | `Dog(this.name);` |  |  |
-|abstraction      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |  |  |
-|override      | Changing how a built-in or inherited function behaves. | `@override` |  |  |
-|void      | A function that does not return a value. | `void printMessage() {}` |  |  |
+|abstraction      | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code) |makes things more simple  |  |
+|override      | Changing how a built-in or inherited function behaves. | `@override` | superheros  |  |
+|void      | A function that does not return a value. | `void printMessage() {}` |placing an order  |  |
 
 
 
