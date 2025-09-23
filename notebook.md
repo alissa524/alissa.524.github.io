@@ -47,13 +47,13 @@ a flamework made by google for building apps that work on web android, and ios-w
 - What widget adds space around content?
 
 
-
+## flutter definitions with structure
 
 
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
 |------|----------------------------|----------------|-------------------|-------------|
-|main      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  |  |
-|materialapp      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
+|main      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  | void main() => runApp(MyPortfolioApp());  |
+|materialapp      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  | return MaterialApp(debugShowCheckedModeBanner: false, title: 'TSA Portfolio',theme: ThemeData(  |
 |scaffold      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
 |column      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
 |row      | A widget that shows things side-by-side. | `Row(...)` |poster  |  |
